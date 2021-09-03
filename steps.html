@@ -1,0 +1,1461 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jScripts/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body dir="rtl">
+
+    <!-- תפריט ראשי באתר-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="index.html">
+            <img src="images/logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-sm-end" id="navbarSupportedContent">
+            <ul class="navbar-nav main-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="about" data-bs-toggle="offcanvas" href="#offcanvasAbout" role="button" aria-controls="offcanvasExample"> אודות </a>
+                </li>
+                <li class="nav-item">
+                    <a class="active nav-link" id="learnNutrition" href="steps.html">תהליך תזונה</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="infoPatient" href="pagient.html">מידע למטופל</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAbout" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="images/logo.png" /></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <h6> אתר המסייע ככלי טיפולי לרופא, לצורך הנגשה של הרגלי תזונה מן הצומח  </h6>
+                <p>פרויקט גמר, תשפ"א.</p>
+                <a class="link-text" href="http://www.hit.ac.il">המחלקה לטכנולוגיות למידה</a>
+                <br />
+                <p>צוות הפרויקט: אור שביט ופלג קרמר</p>
+                <p>מנחה: נוהר רז-פוגל </p>
+                <p>ארגון מנחה: PAN-IL </p>
+                <img src="images/hit-logo.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="mx-auto">
+
+        <div class="d-flex justify-content-between" id="stepsHeader">
+            <h4 class="fourstagetitle">תכנית 4 השלבים</h4>
+                <button class="nav-link btn btn-link" id="about" data-bs-toggle="offcanvas" href="#offcanvasExtrainfo" role="button" aria-controls="offcanvasExample">
+                    <img class="icon" src="images/externallink.png" />
+                     לינקים נוספים
+                </button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExtrainfo" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h4>רשימת לינקים להעשרה</h4>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p>כאן יהיו הלינקים</p>
+                </div>
+            </div>
+        </div>
+        <!-- השלבים -->
+        <div class="step-content row">
+
+            <!-- תפריט צד לשלבים -->
+            <div class="nav col-3 nav-pills flex-column stepsMenu d-none d-md-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="tab_selector nav-link active" id="v-pills-question-tab" data-toggle="pill" href="#v-pills-question" role="tab" aria-controls="v-pills-question" aria-selected="true">שאילת שאלות</a>
+                <a class="tab_selector nav-link" id="v-pills-offers-tab" data-toggle="pill" href="#v-pills-offers" role="tab" aria-controls="v-pills-offers" aria-selected="false">הצעות פשוטות</a>
+                <a class="tab_selector nav-link" id="v-pills-support-tab" data-toggle="pill" href="#v-pills-support" role="tab" aria-controls="v-pills-support" aria-selected="false">מתן מידע ותמיכה</a>
+                <a class="tab_selector nav-link" id="v-pills-tracking-tab" data-toggle="pill" href="#v-pills-tracking" role="tab" aria-controls="v-pills-tracking" aria-selected="false">מעקב</a>
+            </div>
+
+            <select class="mb10 form-control d-md-none" id="tab_selector">
+                <option value="0">שאילת שאלות</option>
+                <option value="1">הצעות פשוטות</option>
+                <option value="2">מתן מידע ותמיכה</option>
+                <option value="3">מעקב</option>
+            </select>
+
+            <!-- תוכן השלבים -->
+            <div class="tab-content col-sm-9" id="v-pills-tabContent">
+
+                <!-- תזכורת לרופא לתעד את הטיפול במחשבו האישי -->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>תזכורת</strong> מומלץ לתעד את ההמלצות הניתנות למטופל במחשבך לצורך מעקב.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <!-- שלב 1 - שאילת שאלות -->
+                <div class="tab-pane fade show active" id="v-pills-question" role="tabpanel" aria-labelledby="v-pills-question-tab">
+                    <div class="row">
+                        <div>
+                            <div class="main-tab-content">
+                                <div class="mx-auto container">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                    <h1>שאלון אבחון הרגלי תזונה</h1>
+                                    <p class="opening">כיום, בחזית ההמלצות התזונתיות של משרד הבריאות הישראלי ושל מוסדות בריאות מובילים אחרים ישנו דגש על דפוסי תזונה מבוססי מזונות שלמים מהצומח (Plant Based Diet). צריכה גבוהה של מזונות מבוססי צומח, בעלי ערכים תזונתיים גבוהים, קשורה לתרומה בריאותית נרחבת, בין השאר להפחתת סיכון למחלות ולסיבוכים הקשורים למחלות (מחלות קרדיווסקולריות, סוכרת, סרטן ועוד).</p>
+                                    <h4>שאלון זה יעזור לכם לאבחן את הרגלי התזונה של המטופלים שלכם. תוכלו להבין בקלות באילו קטגוריות הם צריכים עזרה והמלצות</h4>
+                                                                            </div>
+                                        <div class="card border-secondary mb-3 col-sm-4">
+                                            <div class="card-header">
+                                                <img class="printimg" src="images/printer.png" />
+                                            </div>
+                                            <div class="card-body text-secondary ">
+                                                <p class="card-text">אנו ממליצים להדפיס את קוד הQR ולשים במקום נגיש למטופלים באיזור ההמתנה בכדי שיוכלו למלא את השאלון בזמן ההמתנה ולחסוך זמן</p>
+                                                <a href="QR-Page.html" target="_blank" class="link-text"><h6>לינק להדפסה</h6></a>
+                                            </div>
+                                        </div>
+</div>
+                                    <form name="questions" id="questions">
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    כמה את/ה משלב/ת קטניות בארוחות? (עדשים, גרגרי
+                                                    חומוס,אפונה,טופו,שעועית לבנה)
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="f"
+                                                               id="f1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="f1"> כל ארוחה </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="f"
+                                                               id="f2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="f2">
+                                                            פעם - פעמיים ביום
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="f"
+                                                               id="f3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="f3">
+                                                            כמה פעמים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="f"
+                                                               id="f4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="f4">לעתים רחוקות </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="f"
+                                                               id="f5"
+                                                               value="e" />
+                                                        <label class="form-check-label" for="f5">כלל לא </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    כמה פעמים יוצא לך לאכול ארוחה עיקרית ללא בשר ?
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="s"
+                                                               id="s1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="s1"> כל יום </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="s"
+                                                               id="s2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="s2">
+                                                            כמה פעמים בשבוע
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="s"
+                                                               id="s3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="s3">
+                                                            פעם - פעמיים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="s"
+                                                               id="s4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="s4">כלל לא </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    באיזה תדירות את/ה משלב ירקות בארוחה ?
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="t"
+                                                               id="t1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="t1"> בכל ארוחה </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="t"
+                                                               id="t2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="t2">
+                                                            ארוחה אחת / שתיים ביום
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="t"
+                                                               id="t3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="t3">
+                                                            כמה פעמים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="t"
+                                                               id="t4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="t4">
+                                                            פעם - פעמיים בשבוע
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="t"
+                                                               id="t5"
+                                                               value="e" />
+                                                        <label class="form-check-label" for="t5">כלל לא </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    איזה כמות של פירות את/ה אוכל ביום ?
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fo"
+                                                               id="fo1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="fo1">
+                                                            אוכל/ת 2-4 פירות ביום
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fo"
+                                                               id="fo2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="fo2">
+                                                            אוכל/ת 1-2 פירות ביום
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fo"
+                                                               id="fo3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="fo3">
+                                                            פחות מפרי ביום במהלך השבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fo"
+                                                               id="fo4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="fo4">כלל לא </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    באיזה תדירות את/ה צורך/ת דגנים מלאים במקום לבנים ? (לחם מלא, פסטה
+                                                    מלאה, אורז מלא)
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fi"
+                                                               id="fi1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="fi1"> בכל ארוחה </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fi"
+                                                               id="fi2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="fi2"> פעם ביום </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fi"
+                                                               id="fi3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="fi3">
+                                                            פחות מפעם ביום
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fi"
+                                                               id="fi4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="fi4">
+                                                            פעם - פעמיים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="fi"
+                                                               id="fi5"
+                                                               value="e" />
+                                                        <label class="form-check-label" for="fi5">כלל לא </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    באיזה תדירות את/ה צורך/ת בשר אדום ובשר מעובד ? (נקניק,פסטרמה,שניצל
+                                                    קנוי,נקניקיות)
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="si"
+                                                               id="si1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="si1"> כלל לא </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="si"
+                                                               id="si2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="si2">
+                                                            לעיתים רחוקות
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="si"
+                                                               id="si3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="si3">
+                                                            פעם - פעמיים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="si"
+                                                               id="si4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="si4">
+                                                            כמה פעמים במהלך השבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="si"
+                                                               id="si5"
+                                                               value="e" />
+                                                        <label class="form-check-label" for="si5">כל יום </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group question">
+                                            <div class="row">
+                                                <h6 class="col-form-label">
+                                                    באיזה תדירות את/ה צורך/ת מזון מעובד (ממתקים,מזון מטוגן,משקאות
+                                                    מתוקים) ?
+                                                </h6>
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="se"
+                                                               id="se1"
+                                                               value="a" />
+                                                        <label class="form-check-label" for="se1"> כלל לא </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="se"
+                                                               id="se2"
+                                                               value="b" />
+                                                        <label class="form-check-label" for="se2">
+                                                            לעיתים רחוקות
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="se"
+                                                               id="se3"
+                                                               value="c" />
+                                                        <label class="form-check-label" for="se3">
+                                                            פעם - פעמיים בשבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="se"
+                                                               id="se4"
+                                                               value="d" />
+                                                        <label class="form-check-label" for="se4">
+                                                            כמה פעמים במהלך השבוע
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input"
+                                                               type="radio"
+                                                               name="se"
+                                                               id="se5"
+                                                               value="e" />
+                                                        <label class="form-check-label" for="se5">כל יום </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <input type="submit" value="קבלת תוצאות" class="check_btn" />
+                                    </form>
+
+                                    <div class="modal fade"
+                                         id="resultsModal"
+                                         role="dialog">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">תוצאות</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body"></div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary end-questions" data-bs-dismiss="modal">עבור לשלב הבא</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- שלב 2 - הצעות פשוטות -->
+                <div class="tab-pane fade posts" id="v-pills-offers" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <!-- פילטור לשלב השני -->
+                    <div class="steps-title row">
+                        <div class="col-sm-2" id="filterTitle">סנן הצעות לפי:</div>
+                        <div id="offerFilter" class="filters nav-pills col-sm-10">
+                            <button id="all" class="btn active stepFilter"> הצג הכל</button>
+                            <button id="dg" class="btn stepFilter"> דגנים</button>
+                            <button id="yr" class="btn stepFilter"> ירקות</button>
+                            <button id="pr" class="btn stepFilter"> פירות</button>
+                            <button id="kt" class="btn stepFilter"> קטניות</button>
+                        </div>
+                    </div>
+                    <div id="emptystate">
+                        <img src="images/emptystate.png" />
+                        <h6>יש לבחור את סוג\י המזון להמליץ למטופל בעקבות השאלון</h6>
+                        <p>כאן תמצאו מידע תמציתי עבור כל קטגוריית מזון מומלצת לתזונה מבוססת צומח, והמלצות שניתן להביא למטופלים שלכם</p>
+                    </div>
+                    <!-- דגנים-->
+                    <div class="row food_type_div post dganim" id="dganimdiv" data-category="dganim">
+                        <!-- חלק ימין הכולל הסבר קצר והיתרונות הרפואיים -->
+                        <div class="foodtype_header dganim_header col-sm-4  ">
+                            <img class="foodtype-img" src="images/dganim-img.png" />
+                            <h3>דגנים</h3>
+                            <p>
+                                דגנים מלאים מספקים לגוף אנרגיה, חלבון, מינרלים, ויטמינים, נוגדי חמצון וסיבים. דגנים מלאים לא עברו קילוף ומכילים את כל רכיבי הגרעין, כולל את המעטפת החיצונית והפנימית ואת הנבט.
+                            </p>
+                            <div class="row gap-3 ">
+                                <h4 class="benefits">יתרונות בריאותיים</h4>
+                                <div class="foodtype_icon col-sm-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
+                                <div class="foodtype_icon col-sm-1 dganim-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="איזון רמות סוכר בדם והפחתת סכרת"></div>
+                                <div class="foodtype_icon col-sm-1 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי"></div>
+                            </div>
+                        </div>
+                        <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
+                        <div class="form col-sm-8 foodtype_content">
+                            <!-- צ'ק ליסט עם המלצות למטופל -->
+                            <h4>המלצות למטופל</h4>
+                            <!--<div class="progress checklist-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>-->
+
+                            <div class="row foodtype_check">
+                                <div class="col-sm-6">
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#dganim-1" role="tab" aria-controls="home">
+                                            <input class="form-check-input" type="checkbox" id="d1">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                שימו לב לסוג דגני הבוקר
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list a2" data-bs-toggle="list" href="#dganim-2" role="tab" aria-controls="profile">
+                                            <input class="form-check-input" type="checkbox" id="d2">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                השתדלו להימנע מלחמים מעובדים
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a3" data-bs-toggle="list" href="#dganim-3" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="d3">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                להעדיף דגנים מלאים על פני לבנים
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="dganim-1" role="tabpanel" aria-labelledby="list-home-list">
+                                            דגני בוקר, גם כאלו המכילים דגנים מלאים, הם על פי רוב מוצרים אולטרה מעובדים ולכן רצוי להימנע מהם.
+                                            <button class="check_btn dganim_check_button" id="db1">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="dganim-2" role="tabpanel" aria-labelledby="list-profile-list">
+                                            רוב סוגי הלחמים המלאים גם הם מעובדים, כדאי לחפש לחמים עם כמה שפחות רכיבים וללא רכיבים שאינכם מזהים.
+                                            <button class="check_btn dganim_check_button" id="db2">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="dganim-3" role="tabpanel" aria-labelledby="list-messages-list">
+                                            רצוי לשלב דגנים מלאים מכל הסוגים, עדיף במצבם השלם: אורז, שיבולת שועל, קינואה, כוסמת, שעורה (גריסים), וכמובן חיטה.
+                                            <button class="check_btn dganim_check_button" id="db3">המלצתי למטופל</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- הצעות למגוון סוגים של אותו מזון -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <h4>הצעות לדגנים מלאים</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body row row-cols-sm-3">
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/white_bean.png" /> שעועית לבנה
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/wheatbread.png" /> לחם חיטה מלאה
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/kuskus.png" /> קוסוקס
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/owtmeal.png" /> שיבולת שועל
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/kosemet.png" /> קוסמת
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/blackbean.png" /> שעועית שחורה
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- הצעות למתכונים המכילים את סוג המזון -->
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <h4>מאכלים מוכרים עם דגנים</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/beans_tomato_recipe.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">שעועית ברוטב עגבניות</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/majadra.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">מג'דרה</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/adashim_soup.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">מרק עדשים</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/kinoa_salad.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">סלט קינואה</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ירקות-->
+                    <div class="row food_type_div post yerakot" id="yerakotdiv" data-category="yerakot">
+                        <!-- חלק ימין הכולל הסבר קצר והיתרונות הרפואיים -->
+                        <div class="foodtype_header yerakot_header col-sm-4">
+                            <img class="foodtype-img" src="images/yerakot-img.png" />
+                            <h3>ירקות</h3>
+                            <p>
+                                הירקות עשירים בסיבים, ויטמינים, מינרלים וכן חומרים יחודיים שיש רק בצמחים - הפיטוכימיקלים.
+                                חומרים יחודיים אלו מונעים תהליכים דלקתיים ותהליכים סרטניים בדרכים רבות.
+                            </p>
+                            <div class="row gap-3">
+                                <h4 class="benefits">יתרונות בריאותיים</h4>
+                                <div class="foodtype_icon col-1 yerakot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="פיטוכימיקלים - חומרים יחודיים המונעים תהליכים דלקתיים"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
+                            </div>
+                        </div>
+                        <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
+                        <div class="form col-sm-8 foodtype_content">
+                            <!-- צ'ק ליסט עם המלצות למטופל -->
+                            <h4>המלצות למטופל</h4>
+                            <!--<div class="progress checklist-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>-->
+
+                            <div class="row foodtype_check">
+                                <div class="col-sm-6">
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#yerakot-1" role="tab" aria-controls="home">
+                                            <input class="form-check-input" type="checkbox" id="y1">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                מנה יומית מומלצת
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list a2" data-bs-toggle="list" href="#yerakot-2" role="tab" aria-controls="profile">
+                                            <input class="form-check-input" type="checkbox" id="y2">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                כל הצבעים והסוגים
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a3" data-bs-toggle="list" href="#yerakot-3" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="y3">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                ירקות קפואים
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a4" data-bs-toggle="list" href="#yerakot-4" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="y4">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                ירקות חדשים
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a5" data-bs-toggle="list" href="#yerakot-5" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="y5">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                ארוחת סלט
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="yerakot-1" role="tabpanel" aria-labelledby="list-home-list">
+                                            מומלץ לאכול מידי יום לפחות חמש מנות ירק.
+                                            <button class="check_btn yerakot_check_button" id="yb1">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="yerakot-2" role="tabpanel" aria-labelledby="list-profile-list">
+                                            רצוי לשלב בתזונה ירקות בכל הצבעים והסוגים ובכל שיטות ההכנה הבריאות: הקפצה, אידוי, בישול, אפייה, וכמובן- טריים בסלט.
+                                            <button class="check_btn yerakot_check_button" id="yb2">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="yerakot-3" role="tabpanel" aria-labelledby="list-messages-list">
+                                            לקטי ירקות קפואים זו דרך טובה לשלב ירקות לקיצור תהליכים בבישול.
+                                            <button class="check_btn yerakot_check_button" id="yb3">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="yerakot-4" role="tabpanel" aria-labelledby="list-messages-list">
+                                            נסו בכל פעם שאתם הולכים לסופר לקנות ירק חדש שמעולם לא אכלתם או שלא יצא לכם לאכול בחצי שנה האחרונה.
+                                            <button class="check_btn yerakot_check_button" id="yb4">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="yerakot-5" role="tabpanel" aria-labelledby="list-messages-list">
+                                            נסו לאכול "ארוחת סלט" כארוחה עיקרית - סלט ירקות גדול (שיכול להכיל גם ירקות מבושלים או אנטיפסטי) ושניתן להוסיף לו גם אגוזים, זרעים וקטניות מבושלות. אכלו ארוחה כזו לפחות פעם בשבוע           .
+                                            <button class="check_btn yerakot_check_button" id="yb5">המלצתי למטופל</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- הצעות למגוון סוגים של אותו מזון -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#yerakot-type-collapse" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <h4>הצעות לירקות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="yerakot-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body row row-cols-sm-3">
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/tomato.png" /> עגבניה
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/redpepper.png" /> פלפל אדום
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/cuecumber.png" /> מלפפון
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/carrot.png" />  גזר
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/brocoli.png" /> ברוקולי
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/purplecabage.png" />  כרוב סגול
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- הצעות למתכונים המכילים את סוג המזון -->
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#yerakot-recipe-collapse" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <h4>מאכלים מוכרים עם ירקות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="yerakot-recipe-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/veg-asian.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">תבשיל ירקות אסייתי</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/veg-brocoli.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">סלט ברוקולי וירקות אפוי</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/cabage-potato.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">תבשיל כרוב עם תפו"א</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/color-carrot.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">גזר צבועני בתנור </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- פירות-->
+                    <div class="row food_type_div post peirot" id="peirotdiv" data-category="peirot">
+                        <!-- חלק ימין הכולל הסבר קצר והיתרונות הרפואיים -->
+                        <div class="foodtype_header peirot_header col-sm-4">
+                            <img class="foodtype-img" src="images/peirot-img.png" />
+                            <h3>פירות</h3>
+                            <p>
+                                גם הפירות עשירים בכל הרכיבים אשר מצויים בירקות: סיבים, ויטמינים, מינרלים ופיטוכימיקלים, וגם בסוכר.
+                                מחקרים רבים מצביעים על יתרונות בריאותיים בצריכת פירות שלמים כגון סיכון נמוך לסוכרת סוג 2 ולמחלות לב.
+                            </p>
+                            <div class="row gap-3">
+                                <h4 class="benefits">יתרונות בריאותיים</h4>
+                                <div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
+                            </div>
+                        </div>
+                        <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
+                        <div class="form col-sm-8 foodtype_content">
+                            <!-- צ'ק ליסט עם המלצות למטופל -->
+                            <h4> המלצות למטופל</h4>
+                            <!--<div class="progress checklist-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>-->
+
+                            <div class="row foodtype_check">
+                                <div class="col-sm-6">
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#peirot-1" role="tab" aria-controls="home">
+                                            <input class="form-check-input" type="checkbox" id="p1">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                מנה יומית מומלצת
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list a2" data-bs-toggle="list" href="#peirot-2" role="tab" aria-controls="profile">
+                                            <input class="form-check-input" type="checkbox" id="p2">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                פירות העונה
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a3" data-bs-toggle="list" href="#peirot-3" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="p3">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                שייקים
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list a4" data-bs-toggle="list" href="#peirot-4" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="p4">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                זמינות
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="peirot-1" role="tabpanel" aria-labelledby="list-home-list">
+                                            מומלץ לאכול 2-3 פירות ליום.
+                                            <button class="check_btn peirot_check_button" id="pb1">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="peirot-2" role="tabpanel" aria-labelledby="list-profile-list">
+                                            אכלו פירות בעונתם, הפירות יהיו טריים וטעימים יותר וגם יכילו יותר ויטמינים ופיטוכמיקלים.
+                                            <button class="check_btn peirot_check_button" id="pb2">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="peirot-3" role="tabpanel" aria-labelledby="list-messages-list">
+                                            שייקים המכילים פירות ואף ירקות (למשל חסה, עלים ירוקים או מלפפונים) הם דרך נהדרת להגדיל את צריכת הפירות והירקות.
+                                            <button class="check_btn peirot_check_button" id="pb3">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="peirot-4" role="tabpanel" aria-labelledby="list-messages-list">
+                                            זמינות היא שם המשחק- למשל: הניחו את הפירות בבית במקום נגיש ונראה לעין, חיתכו פירות והגישו בצלחת.
+                                            <button class="check_btn peirot_check_button" id="pb4">המלצתי למטופל</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- הצעות למגוון סוגים של אותו מזון -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fruits-type-collapse" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <h4>הצעות לפירות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="fruits-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body row row-cols-sm-3">
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/apples.png" /> תפוח
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/grapes.png" /> ענבים
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/peahces.png" /> אפרסק
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/oranges.png" />  תפוז
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/watermelons.png" /> אבטיח
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/strawbaries.png" />  תות
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- הצעות למתכונים המכילים את סוג המזון -->
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fruits-recipe-collapse" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <h4>מאכלים מוכרים עם ירקות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="fruits-recipe-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/muzli.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title"> מוזלי מרענן</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/layercake.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">עוגת שכבות </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/fruitscheese.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">גבינה ופירות טריים</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/fruitssalad.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">סלט קייצי </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- קטניות-->
+                    <div class="row food_type_div post kitniot" id="kitniotdiv" data-category="kitniot">
+                        <!-- חלק ימין הכולל הסבר קצר והיתרונות הרפואיים -->
+                        <div class="foodtype_header kitniot_header col-sm-4">
+                            <img class="foodtype-img" src="images/kitniot-img.png" />
+                            <h3>קטניות</h3>
+                            <p>
+                                הקטניות עשירות בחלבון, בסיבים, במינרלים (ברזל, אבץ, סידן) ובויטמינים.
+                                כל הנוטריינטים האלו חשובים לתפקוד תקין של מערכות רבות בגופנו ולקידום הבריאות.
+                            </p>
+                            <div class="row gap-3">
+                                <h4 class="benefits">יתרונות בריאותיים</h4>
+                                <div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
+                                <div class="foodtype_icon col-1 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
+                            </div>
+                        </div>
+                        <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
+                        <div class="form col-sm-8 foodtype_content">
+                            <!-- צ'ק ליסט עם המלצות למטופל -->
+                            <h4> המלצות למטופל</h4>
+                            <!--<div class="progress checklist-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>-->
+
+                            <div class="row foodtype_check">
+                                <div class="col-sm-6">
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list k1" data-bs-toggle="list" href="#kitnot-1" role="tab" aria-controls="home">
+                                            <input class="form-check-input" type="checkbox" id="k1">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                מנה יומית מומלצת
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list k2" data-bs-toggle="list" href="#kitnot-2" role="tab" aria-controls="profile">
+                                            <input class="form-check-input" type="checkbox" id="k2">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                קטניות ללא השרייה
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list k3" data-bs-toggle="list" href="#kitnot-3" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="k3">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                קמחי קטניות
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list k4" data-bs-toggle="list" href="#kitnot-4" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="k4">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                לשמור במקפיא
+                                            </label>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list k5" data-bs-toggle="list" href="#kitnot-5" role="tab" aria-controls="messages">
+                                            <input class="form-check-input" type="checkbox" id="k5">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                הדרגתיות
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="kitnot-1" role="tabpanel" aria-labelledby="list-home-list">
+                                            מומלץ לשלב קטניות בארוחה עיקרית אחת ביום לפחות.
+                                            <button class="check_btn kitniot_check_button" id="kb1">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="kitnot-2" role="tabpanel" aria-labelledby="list-profile-list">
+                                            אפשר להתחיל בשילוב קטניות שלא דורשות השרייה, כמו למשל עדשים כתומות וטופו שעשוי מסויה.
+                                            <button class="check_btn kitniot_check_button" id="kb2">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="kitnot-3" role="tabpanel" aria-labelledby="list-messages-list">
+                                            ניתן לשלב קמחי קטניות שכיום קיימים בכל סופר (למשל בהכנת קציצות/ פשטידות).
+                                            <button class="check_btn kitniot_check_button" id="kb3">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="kitnot-4" role="tabpanel" aria-labelledby="list-messages-list">
+                                            כשמשרים קטניות- להשרות כמות גדולה ולהקפיא במנות קטנות לשימוש עתידי, אפשר גם להקפיא לאחר הבישול וכך הקטנית מוכנה להוספה לכל תבשיל.
+                                            <button class="check_btn kitniot_check_button" id="kb4">המלצתי למטופל</button>
+                                        </div>
+                                        <div class="tab-pane fade" id="kitnot-5" role="tabpanel" aria-labelledby="list-messages-list">
+                                            אם אתם עדיין לא רגילים לאכול קטניות, כדאי להתחיל בכמויות קטנות ולהעלות בהדרגה, ולהתחיל בקטניות קלות לעיכול (עדשים, מש, טופו) וכך להימנע מגזים או מנפיחות בבטן.
+                                            <button class="check_btn kitniot_check_button" id="kb5">המלצתי למטופל</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- הצעות למגוון סוגים של אותו מזון -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kitniot-type-collapse" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <h4>הצעות לקטניות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="kitniot-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body row row-cols-sm-3">
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/humus.png" /> חומוס
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/soya.png" /> סויה
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/blacklentils.png" /> עדשים שחורות
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/whitelentils.png" />  עדשים לבנות
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/whitebeans.png" /> שעועית לבנה
+                                                </div>
+                                            </div>
+                                            <div class="card food_type_recommend col">
+                                                <div class="card-body">
+                                                    <img src="images/redbeans.png" />  שעועית אדמוה
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- הצעות למתכונים המכילים את סוג המזון -->
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kitniot-recipe-collapse" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <h4>מאכלים מוכרים עם קטניות</h4>
+                                        </button>
+                                    </h4>
+                                    <div id="kitniot-recipe-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-cols-sm-1 row-cols-sm-2 g-4">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/marakadashim.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title"> מרק עדשים</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/ktzitzaadashim.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">קציצת עדשים </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/marakafuna.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">מרק אפונה</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src=images/ktzitzahumus.png class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">קציצות חומוס וירקות </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- שלב 3 - הצעות פשוטות -->
+                <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="main-tab-content">
+                                <!--מידע כללי בנוגע למאכלים שרצוי להימנע מהם-->
+                                <h1>מאכלים שרצוי להימנע</h1>
+                                <p class="support_header_text">
+                                    אמנם מדובר במזון המציע טעם משופר, הכנה מהירה ופשוטה וחיי מדף ארוכים יותר, אבל זה מגיע עם תג מחיר גבוה במיוחד: <b>רמות תחלואה גבוהות ואינספור בעיות בריאותיות חמורות ומסכנות חיים</b>.
+                                    מדובר במאכלים מלאים בתוספים מלאכותיים כמו חומרי טעם, צבעי מאכל, חומרים משמרים, מייצבים, מתחלבים, מעכבי חמצון ועוד.
+                                    להלן 2 הסוגים העיקריים שכדאי להימנע מהם:
+                                </p>
+
+
+                                <ul class="nav nav-tabs avoidfood-tabs nav-pills flex-row" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="processfood-tab" data-toggle="tab" href="#ProcessFood" role="tab" aria-controls="ProcessFood" aria-selected="true">מזונות אולטרא מעובדים</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="meatfood-tab" data-toggle="tab" href="#MeatFood" role="tab" aria-controls="MeatFood" aria-selected="false">בשר אדום ומעובד</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content avoidfood-content">
+                                    <!--סוג 1 - מזונות אולטרא מעובדים-->
+                                    <div class="tab-pane fade active show" id="ProcessFood" role="tabpanel" aria-labelledby="processfood-tab">
+                                        <div class="d-flex p-md-4 avoidfood-head-section">
+                                            <div>
+                                                <h5>מזונות אולטרא מעובדים</h5>
+                                                <p>
+                                                    מזונות אולטרה מעובדים הם מזונות הכוללים מרכיבים שמוצו מתוך מזון וכן תוספים היוצרים צבע, מרקם וטעימות תעשייתיים המשפיעים על הרגלי הצריכה ותחושת השובע הטבעית, מוכנים לאכילה, בכל מקום ובכל זמן.
+                                                </p>
+                                            </div>
+                                            <img class="avoid_food_icon" src="../images/ultra.png" alt="Ultra processed food">
+                                        </div>
+
+
+                                        <h5 class="avoidfood-tips">טיפים ורעיונות</h5>
+
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        הרגלי האכילה מתחילים בקנייה
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        כוונו להחלטה משפחתית לקנות בעיקר מוצרי מזון גולמיים (לא מעובדים). שאפו לכך שלא יהיו בבית מוצרים אולטרה מעובדים.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                        בישולים
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        בישול יכול להיות גם תהליך קצר, מצאו מתכונים פשוטים שמתאים לכם ליישם.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                        חוויה משפחתית
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        שיתוף בני הבית בקנייה, בתכנון ובהכנת האוכל- יכול להיות חווייה משפחתית שגם עשויה לתרום לנכונות של כולם להנות מהמנות שהחלטתם לשלב.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--סוג 2 - בשר אדום ומעובד-->
+
+                                    <div class="tab-pane fade" id="MeatFood" role="tabpanel" aria-labelledby="meatfood-tab">
+                                        <div class="d-flex p-md-4 avoidfood-head-section">
+                                            <div>
+                                                <h5>בשר אדום ומעובד</h5>
+                                                <p>
+                                                    בשר מעובד הוא כל סוג בשר שעבר המלחה, הוספת חומרי שימור, ועישון, למשל נקניקיות, נקניקים, שניצלים מעובדים, בשרים מעובדים (כגון המבורגר וקבב) ופסטרמה. נמצא קשר בין צריכת בשר מעובד וצריכת בשר אדום לבין סרטן (בייחוד סרטן המעי הגס) וכן מחלות לב וכלי דם, וסוכרת.
+                                                </p>
+                                            </div>
+                                            <img class="avoid_food_icon" src="../images/meat.png" alt="meat food">
+                                        </div>
+
+                                        <h5 class="avoidfood-tips">טיפים ורעיונות</h5>
+
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        סדרי עדיפויות
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        העדיפו מנות אחרות שתוכלו לשלב במהלך היום במקום מנה נוכחית המכילה בשר מעובד.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                        תחליפים
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        כיום קיימים מוצרים מעובדים מן הצומח (נקניקיות/ המבורגרים) ואפשר לשלב אותם בתדירות נמוכה, אך חשוב לציין שגם אלו מזונות מעובדים שאת הצריכה שלהם כדאי לצמצם.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!--סטריפ הודעה בדבר מקרים חריגים-->
+                            <div class="alert alert-light align-items-center" role="alert">
+                                <div class="d-flex">
+                                    <img class="icon" src="images/alert_icon.png" />
+                                    <div>
+                                        <h6>יש להמליץ למטופל\ת לייעוץ אצל דיאטן\ית במצבים הבאים</h6>
+                                        <p>
+                                            סוכרת, נשים בהריון, פעוטות,  מחלות מעי דלקתיות, מעבר חד לתזונה צמחית מלאה
+                                            ומטופלים שלא מתקדמים בשינוי התזונתי.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- שלב 4 - מעקב -->
+                <div class="tab-pane fade" id="v-pills-tracking" role="tabpanel" aria-labelledby="v-pills-tracking-tab">
+                    <div class="main-tab-content">
+                        <h1>מעקב</h1>
+                        <p class="opening">
+                            מומלץ לבצע מעקב אחרי ההמלצות התזונתיות אשר ניתנו למטופל בפגישות הקודמות.
+                            המעקב עוזר לך להבין האם ההמלצות הוטמעו בחיי היום יום של המטופל והאם נעשה שינוי.
+                            בנוסף זה עוזר ליצירת קשר עם המטופל ומחזק אצלו את העובדה שזה תהליך לאורך זמן.
+                            ישנם כמה דברים שחשוב וכדאי לעשות כמעקב אחרי מטופל :
+                        </p>
+                        <ul class="timeline">
+                            <li class="track-questions">
+                                <h4>לברר אם נעשה שינוי </h4>
+                                <p class="opening">
+                                    ניתן לשאול את המטופל שאלות לגבי ההמלצה הספציפית שניתנה לו בפעם הקודמת ולהבין מה הצליח להטמיע ומה לא. חלק מהשאלות שניתן לשאול :
+                                    <ul class="list-group">
+                                        <li class="list-group-item">איך את/ה מסתדר/ת?</li>
+                                        <li class="list-group-item">מה הצלחת לשלב יותר באכילה היומית/השבועית?</li>
+                                        <li class="list-group-item">מה הצלחת להפחית?</li>
+                                        <li class="list-group-item">מתכון חדש שאימצת?</li>
+                                        <li class="list-group-item">הרגל שמצאת כיעיל עבורך? (בישול מראש, תכנון, קיצורי דרך כמו לדוגמה קטניות קפואות, השרייה, קניות וכו')</li>
+                                    </ul>
+                                </p>
+                            </li>
+
+                            <li class="track-positive">
+                                <h4>לתת חיזוק חיובי</h4>
+                                <p class="opening">
+                                    אם נעשה שינוי להבין מה היתרונות שהוא הרגיש מבחינת כאבים שהופחתו / הרגשת חיות וכו'.
+                                    להבין ביחד איתו איך זה השפיע לטובה על החיים שלו. ניתן להזכיר לו את היתרונות בשינוי שביצע,
+                                    גם כאלה ששוחחתם עליהם בפעמים קודמות וגם יתרונות נוספים שלא צוינו.
+                                </p>
+                            </li>
+
+                            <li class="track-recommendations">
+                                <h4>להמליץ על שינויים נוספים</h4>
+                                <p class="opening">
+                                    אם המטופל מרגיש בנוח עם השינוי שנעשה, ניתן להמליץ על שינוי תזונתי נוסף שהוא יכול לבצע
+                                </p>
+                            </li>
+
+                            <li class="track-add">
+                                <h4>המלצות נוספות</h4>
+                                <p class="opening">
+                                    אפשר לתת המלצות ספציפיות נוספות בהקשר לבעיה שהוצגה במהלך הטיפול. בנוסף אם יש צורך או קושי בהטמעת השינוי התזונתי ניתן להמליץ על סדנאות בישול ו/או בדיקות דם.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

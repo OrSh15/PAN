@@ -1,0 +1,439 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/pagientstyle.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jScripts/pagient.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+
+    <!-- Optional JavaScript -->
+
+
+</head>
+<body>
+    <!-- תפריט ראשי באתר-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo">Nutri Aid</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-sm-end" id="navbarSupportedContent">
+            <ul class="navbar-nav main-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="learnNutrition" href="QuizForPatient.html">שאלון</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active nav-link" id="infoPatient" href="pagientNutriAdvice.html">מידע על תזונה</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Circle navigation - types of food -->
+    <div class="container-fluid">
+        <div class="d-block align-items-center food-plate ">
+            <h1 class="text-center">כיצד לשמור על אורח חיים בריא</h1>
+            <h6 class="text-center">בחרו קטגוריה אותה תרצו לשלב בארוחה הבאה</h6>
+            <ul class="mx-auto orange-ul circular-nav row">
+                <li>
+                    <a class="inner-circle orange-sct-2" id="fruits">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">פירות</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="inner-circle orange-sct-3" id="vegs">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">ירקות</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="inner-circle orange-sct-4" id="legumes">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">קטניות </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="inner-circle orange-sct-5" id="seeds">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">גרעינים</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="inner-circle orange-sct-6" id="nuts">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">אגוזים</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="inner-circle orange-sct-1" id="grains">
+                        <div class="container-lvl1">
+                            <div class="container-lvl2">
+                                <div class="container-lvl3">
+                                    <div class="text-container">
+                                        <h3 class="">דגנים</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Veg Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="vegsSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>ירקות</h2>
+                    <p class="sectiontext">
+                        ירקות כידוע, הם דלי קלוריות ודלי שומן, ועם זאת הם מקור חשוב למים, סיבים, מינרלים,
+                        ויטמינים ובנוסף לכך גם לתרכובות ייחודיות רבות בעלות השפעות בריאותיות רבות.
+                        לרוב התרכובות הייחודיות הללו יש פעילות נוגדת-חמצון (אנטי-אוקסידנטית) המגנה מפני סרטן, טרשת עורקים, קטרקט ואף מאיטה את תהליכי ההזדקנות.
+                        צריכה מגוונת של ירקות, מכל המשפחות והצבעים, מבטיחה איזון בין התרכובות השונות והשגת התועלות הבריאותיות המגוונות.
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp"> לפחות 5 ירקות ביום ב-5 צבעים שונים </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם ירקות</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/112" class="link-dark" target="_blank">סלט סלרי וכרוב סגול</a> </li>
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/87" class="link-dark" target="_blank">סלט גזר</a></li>
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/121" class="link-dark" target="_blank">סלט סלק מבושל</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/veg-image.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- Frtuits Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="fruitsSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>פירות</h2>
+                    <p class="sectiontext">
+                        שלבו ירקות בכל הצורות: טריים, מבושלים, מאודים, מוקפצים או אפויים. אפשר לקנות
+                        ירקות טריים (רצוי בהתאם לעונה), קפואים או מצוננים
+                        מכל הצבעים והסוגים, ובמיוחד עלים ירוקים כמו פטרוזיליה, כרוב וסלרי.
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp"> פעמיים ביום - רצוי לא יותר </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם פירות</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/98" class="link-dark" target="_blank">גלידת תות</a> </li>
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/78" class="link-dark" target="_blank">מלבי קרם קוקוס</a></li>
+                            <li class="list-group-item"><a href="https://yum.co.il/recipe/102" class="link-dark" target="_blank">סלט פירות קיצי</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/fruit-img.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- Legumes Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="legumesSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>קטניות</h2>
+                    <p class="sectiontext">
+                        הקטניות הן מקור מצוין לחלבונים מהצומח וגם לפחמימות מורכבות.
+                        הן חשובות למי שממעט לאכול מזון מהחי וכמובן לטבעונים.
+                        עם זאת, כדי שתקבלו את כל החלבונים וחומצות האמינו שלהם אתם זקוקים,
+                        חשוב ומומלץ לשלב בין קטניות לדגנים (רצוי מלאים) במהלך היום.
+                        דרך אגב, ממש לא חובה לאכול אותם ביחד שכן הגוף יודע לשמור את מה שחשוב לו ולהשתמש בו אחר כך.
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp"> פעם ביום בשילוב המנה העיקרית </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם קטניות</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://veg.co.il/recipes/patties/lentil-patties/" class="link-dark" target="_blank">קציצות עדשים</a> </li>
+                            <li class="list-group-item"><a href="https://veg.co.il/recipes/stews/lentil-swiss-chard-soup/" class="link-dark" target="_blank">תבשיל עדשים ומנגולד</a></li>
+                            <li class="list-group-item"><a href="https://veg.co.il/recipes/spreads/homemade-hummus/" class="link-dark" target="_blank">חומוס ביתי</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/legume-image.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- Seeds Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="seedsSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>גרעינים</h2>
+                    <p class="sectiontext">
+                        גרעינים הם נציגי "השומנים הבריאים",
+                        שומנים מן הצומח שמגיעים עם יתרונות בריאותיים רבים לבריאות הלב, חיזוק הכולסטרול הטוב,
+                        הטבה עם בריאות מערכת העיכול ועוד.
+                        כשאינם עוברים תהליכי קלייה הם מכילים שפע של ויטמינים ומינרלים כמו: אבץ, מגנזיום, חומצה פולית, סלניום, ברזל , סידן, ויטמין E,
+                        וויטמינים מקבוצת B, חומצות שומן רב בלתי רווית, סיבים תזונתיים ואחוזי חלבון גבוהים.
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp"> חופן אחד גדול ליום </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם גרעינים</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/9754" class="link-dark" target="_blank">סלט כרוב ופיצוחים</a> </li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/7868" class="link-dark" target="_blank">לחם ביתי עם דגנים וגרעינים</a></li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/7523" class="link-dark" target="_blank">חממרח זרעי צ'יה וגרעינים</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/seed-image.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- Nuts Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="nutsSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>אגוזים</h2>
+                    <p class="sectiontext">
+                        אגוזים הם עשירים בוויטמינים,
+                        במינרלים ובסיבים תזונתיים, בעלי סגולות בריאותיות רבות, מסייעים במניעת מחלות לב וכלי דם, ומכילים כמעט את כל אבות המזון.
+                        אלא שלצד כל היתרונות הללו יש לאגוזים חסרון אחד בולט: הם מכילים הרבה מאד שומן וקלוריות (רובם מכילים 550-730 קק"ל לחופן של 100 גרם).
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp"> מומלץ לצרוך בממוצע 2 סוגי אגוזים ביום, כל סוג בין 5-10 אגוזים </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם אגוזים</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/10349" class="link-dark" target="_blank">עוגיות פיצוחים</a> </li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/10189" class="link-dark" target="_blank">לחם אגוזים ועשבי תיבול</a></li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/10042" class="link-dark" target="_blank">עוגיות אגוזים ללא מלח</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/nut-image.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- Grains Setion: each section has image and text. the text contaion information and recipes. -->
+        <div id="grainsSection" class="plate-section mx-auto">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                    <h2>דגנים</h2>
+                    <p class="sectiontext">
+                        הדגנים מהווים מקור בסיסי לאספקת אנרגיה ואבות מזון עבור מרבית אוכלוסיית העולם.
+                        יש הבדלים בין הדגנים מבחינה תזונתית. לכן רצוי לגוון את צריכת הדגנים ולא להתמקד רק בסוג אחד.
+                        את הדגנים ניתן לאכול כשהם מבושלים, מאודים, אפויים או נבוטים.
+                        דגנים מלאים הם מקורות טובים לפחמימות, חלבונים, ויטמינים מקבוצה B בעיקר B1 ,B2 ,B3, ויטמין E, ברזל, אבץ, מגנזיום וסיבים. דגנים אינם מכילים ויטמין C וקרטונואידים למעט תירס.
+                    </p>
+                    <div class="freq d-flex justify-content-end align-items-center">
+                        <p class="freqp">  מנות דגנים ביום 3-6 </p>
+                        <img src="images/DateIcon.png" />
+                    </div>
+                    <div class="recipe">
+                        <div class="card-header">
+                            <div class="freq d-flex justify-content-end align-items-center">
+                                <h5 class="freqp">  מתכונים עם דגנים</h5>
+                                <img src="images/recipe.png" />
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/10123" class="link-dark" target="_blank">סלט ירקות שורש עם דגנים</a> </li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/8948" class="link-dark" target="_blank">מרק ירקות עם עדשים ושיבולת שועל</a></li>
+                            <li class="list-group-item"><a href="https://www.foodsdictionary.co.il/Recipes/6457" class="link-dark" target="_blank">מרק תירס עם קינואה</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="imgsection" src="images/grain-image.png" />
+                </div>
+                <button type="button" class="btn btn-outline-primary backtotop"><img src="images/up.png" /></button>
+            </div>
+        </div>
+
+        <!-- benefits of healthy nutrition -->
+        <div class="d-block mx-auto benefits">
+            <h2>יתרונות תזונה מן הצומח</h2>
+            <div class="row benefits-list">
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">02</h2>
+                        <h6>הפחתת סיכון לסכרת</h6>
+                    </div>
+                    <img src="images/diabetes.png" />
+                </div>
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">01</h2>
+                        <h6>הפחתת סיכון למחלות לב וכלי דם</h6>
+                    </div>
+                    <img src="images/heart.png" />
+                </div>
+                <div class="w-100"></div>
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">04</h2>
+                        <h6>שמירה על משקל תקין וירידה במשקל</h6>
+                    </div>
+                    <img src="images/weight.png" />
+                </div>
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">03</h2>
+                        <h6>שמירה על לחץ דם תקין</h6>
+                    </div>
+                    <img src="images/presure.png" />
+                </div>
+                <div class="w-100"></div>
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">06</h2>
+                        <h6>הפחתת רמות כולסטרול</h6>
+                    </div>
+                    <img src="images/colesterol.png" />
+                </div>
+                <div class="benfits-item col-sm-6 d-flex justify-content-end align-items-center">
+                    <div class="overtext">
+                        <h2 class="font-weight-bold">05</h2>
+                        <h6>מניעת סוגי סרטן שונים</h6>
+                    </div>
+                    <img src="images/cancer.png" />
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Dialog Modal contain the about content -->
+        <div class="modal fade" id="aboutModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">אודות</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            .פיתוח נעשה במסגרת קורס תכנות<br />
+                            .תלמידים: אור שביט ופלג קרמר<br />
+                            www.freepik.com
+                            .התמונות נלקחו מהאתר freepik
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
