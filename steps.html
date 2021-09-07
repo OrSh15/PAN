@@ -2,10 +2,13 @@
 <html lang="">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <title>NutriAid</title>
+    <link rel="icon"
+          type="image/png"
+          href="/images/favicon-16x16.png">
+    <meta name="description" content="נוטריאייד הוא אתר המיועד לרופאי משפחה וסטודנטים לרפואה ללמידה על תזונה מבוססת צומח ככלי טיפולי למניעת מחלות" />
+    <meta name="keywords" content="nutriaid,nutrition,health,doctors,nutritionfordoctors" />
+    <meta name="author" content="Peleg Kremer and Or Shavit" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <!-- CSS -->
@@ -68,7 +71,7 @@
             <div>
                 <h6> אתר המסייע ככלי טיפולי לרופא, לצורך הנגשה של הרגלי תזונה מן הצומח  </h6>
                 <p>פרויקט גמר, תשפ"א.</p>
-                <a class="link-text" href="http://www.hit.ac.il">המחלקה לטכנולוגיות למידה</a>
+                <a class="link-text" href="http://www.hit.ac.il target="_blank"">המחלקה לטכנולוגיות למידה</a>
                 <br />
                 <p>צוות הפרויקט: אור שביט ופלג קרמר</p>
                 <p>מנחה: נוהר רז-פוגל </p>
@@ -83,10 +86,13 @@
 
         <div class="d-flex justify-content-between" id="stepsHeader">
             <h4 class="fourstagetitle">תכנית 4 השלבים</h4>
+            <div class="d-flex justify-content-end">
                 <button class="nav-link btn btn-link" id="about" data-bs-toggle="offcanvas" href="#offcanvasExtrainfo" role="button" aria-controls="offcanvasExample">
                     <img class="icon" src="images/externallink.png" />
-                     לינקים נוספים
+                    לינקים נוספים
                 </button>
+
+            </div>
         </div>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExtrainfo" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -95,12 +101,16 @@
             </div>
             <div class="offcanvas-body">
                 <div>
-                    <p>כאן יהיו הלינקים</p>
+                    <h3 class="linksTitle"><a href="https://pan-il.org/" target="_blank">אתר PAN</a></h3>
+                    <h3 class="linksTitle"><a href="https://pan-il.org/studies/" target="_blank">מחקרים בנושא תזונה</a></h3>
+                    <h3 class="linksTitle"><a href="https://pan-int.org/resources/the-power-of-nutrition/" target="_blank">כוחה של תזונה</a></h3>
+                    <h3 class="linksTitle"><a href="https://pan-il.org/wp-content/uploads/4-steps-colors.pdf" target="_blank">שילוב מזונות מהצומח(PDF)</a></h3>
+                    <h3 class="linksTitle"><a href="https://pan-il.org/wp-content/uploads/%D7%A2%D7%9C%D7%95%D7%9F-%D7%9C%D7%9E%D7%98%D7%95%D7%A4%D7%9C%D7%99%D7%9D-%D7%92%D7%A8%D7%A1%D7%94-%D7%9C%D7%94%D7%93%D7%A4%D7%A1%D7%94.pdf" target="_blank">עלון למטופלים</a></h3>
                 </div>
             </div>
         </div>
         <!-- השלבים -->
-        <div class="step-content row">
+        <div class="m-auto row justify-content-center">
 
             <!-- תפריט צד לשלבים -->
             <div class="nav col-3 nav-pills flex-column stepsMenu d-none d-md-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -110,7 +120,7 @@
                 <a class="tab_selector nav-link" id="v-pills-tracking-tab" data-toggle="pill" href="#v-pills-tracking" role="tab" aria-controls="v-pills-tracking" aria-selected="false">מעקב</a>
             </div>
 
-            <select class="mb10 form-control d-md-none" id="tab_selector">
+            <select class="stepstabMenu mb10 form-control d-md-none mb-3" id="tab_selector">
                 <option value="0">שאילת שאלות</option>
                 <option value="1">הצעות פשוטות</option>
                 <option value="2">מתן מידע ותמיכה</option>
@@ -157,30 +167,36 @@
                                                 </h6>
                                                 <div>
                                                     <div class="form-check">
+
                                                         <input class="form-check-input"
                                                                type="radio"
                                                                name="f"
                                                                id="f1"
                                                                value="a" />
-                                                        <label class="form-check-label" for="f1"> כל ארוחה </label>
+                                                        <label class="btn-light form-check-label" for="f1">
+                                                            כל ארוחה
+                                                        </label>
                                                     </div>
                                                     <div class="form-check">
+
                                                         <input class="form-check-input"
                                                                type="radio"
                                                                name="f"
                                                                id="f2"
                                                                value="b" />
-                                                        <label class="form-check-label" for="f2">
+                                                        <label class="btn-light form-check-label" for="f2">
+
                                                             פעם - פעמיים ביום
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
+
                                                         <input class="form-check-input"
                                                                type="radio"
                                                                name="f"
                                                                id="f3"
                                                                value="c" />
-                                                        <label class="form-check-label" for="f3">
+                                                        <label class="btn-light form-check-label" for="f3">
                                                             כמה פעמים בשבוע
                                                         </label>
                                                     </div>
@@ -586,12 +602,39 @@
                             <p>
                                 דגנים מלאים מספקים לגוף אנרגיה, חלבון, מינרלים, ויטמינים, נוגדי חמצון וסיבים. דגנים מלאים לא עברו קילוף ומכילים את כל רכיבי הגרעין, כולל את המעטפת החיצונית והפנימית ואת הנבט.
                             </p>
-                            <div class="row gap-3 ">
-                                <h4 class="benefits">יתרונות בריאותיים</h4>
-                                <div class="foodtype_icon col-sm-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
-                                <div class="foodtype_icon col-sm-1 dganim-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="איזון רמות סוכר בדם והפחתת סכרת"></div>
-                                <div class="foodtype_icon col-sm-1 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי"></div>
+
+                            <h4 class="benefits">יתרונות בריאותיים</h4>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב">
+                                    <img src="images/dganim-benefit-1.png" />
+                                    <p class="col-9">הורדת רמות הכולסטרול ושמירה על תפקוד הלב</p>
+                                </div>
+                              
                             </div>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 dganim-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="איזון רמות סוכר בדם והפחתת סכרת">
+                                    <img src="images/dganim-benefit-2.png" />
+                                    <p class="col-9">איזון רמות סוכר בדם והפחתת סכרת</p>
+                                </div>
+                               
+                            </div>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי">
+                                    <img src="images/kitniot-benefits-1.png" />
+                                    <p class="col-9">מסייעות בתהליך העיכול ולתפקוד המעי</p>
+                                </div>
+                               
+                            </div>
+
+
+
+                            <!--<div class="row gap-3 ">
+
+        <div class="foodtype_icon col-sm-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"> </div>
+
+        <div class="foodtype_icon col-sm-1 dganim-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="איזון רמות סוכר בדם והפחתת סכרת">איזון רמות סוכר בדם והפחתת סכרת</div>
+        <div class="foodtype_icon col-sm-1 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי">מסייעות בתהליך העיכול ולתפקוד המעי</div>
+    </div>-->
                         </div>
                         <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
                         <div class="form col-sm-8 foodtype_content">
@@ -602,7 +645,7 @@
                     </div>-->
 
                             <div class="row foodtype_check">
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#dganim-1" role="tab" aria-controls="home">
                                             <input class="form-check-input" type="checkbox" id="d1">
@@ -624,7 +667,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="dganim-1" role="tabpanel" aria-labelledby="list-home-list">
                                             דגני בוקר, גם כאלו המכילים דגנים מלאים, הם על פי רוב מוצרים אולטרה מעובדים ולכן רצוי להימנע מהם.
@@ -650,7 +693,7 @@
                                         </button>
                                     </h4>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body row row-cols-sm-3">
+                                        <div class="accordion-body row row-cols-auto">
                                             <div class="card food_type_recommend col">
                                                 <div class="card-body">
                                                     <img src="images/white_bean.png" /> שעועית לבנה
@@ -745,12 +788,35 @@
                                 הירקות עשירים בסיבים, ויטמינים, מינרלים וכן חומרים יחודיים שיש רק בצמחים - הפיטוכימיקלים.
                                 חומרים יחודיים אלו מונעים תהליכים דלקתיים ותהליכים סרטניים בדרכים רבות.
                             </p>
-                            <div class="row gap-3">
+                            <h4 class="benefits">יתרונות בריאותיים</h4>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 yerakot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="פיטוכימיקלים - המונעים תהליכים דלקתיים">
+                                    <img src="images/yerakot-benefits-1.png" />
+                                    <p class="col-9">פיטוכימיקלים - המונעים תהליכים דלקתיים</p>
+                                </div>
+                               
+                            </div>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין">
+                                    <img src="images/yerakot-benefits-2.png" />
+                                    <p class="col-9">שמירה על משקל תקין</p>
+                                </div>
+                                
+                            </div>
+                            <div class="row advantages">
+                                <div class="foodtype_icon col-sm-3 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן">
+                                    <img src="images/yerakot-benefits-3.png" />
+                                    <p class="col-9">הפחתת הסיכון לסרטן</p>
+                                </div>
+                                
+                            </div>
+
+                            <!--<div class="row gap-3">
                                 <h4 class="benefits">יתרונות בריאותיים</h4>
-                                <div class="foodtype_icon col-1 yerakot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="פיטוכימיקלים - חומרים יחודיים המונעים תהליכים דלקתיים"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="פיטוכימיקלים - המונעים תהליכים דלקתיים"></div>
                                 <div class="foodtype_icon col-1 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין"></div>
                                 <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
-                            </div>
+                            </div>-->
                         </div>
                         <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
                         <div class="form col-sm-8 foodtype_content">
@@ -761,7 +827,7 @@
                     </div>-->
 
                             <div class="row foodtype_check">
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#yerakot-1" role="tab" aria-controls="home">
                                             <input class="form-check-input" type="checkbox" id="y1">
@@ -795,7 +861,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="yerakot-1" role="tabpanel" aria-labelledby="list-home-list">
                                             מומלץ לאכול מידי יום לפחות חמש מנות ירק.
@@ -829,7 +895,7 @@
                                         </button>
                                     </h4>
                                     <div id="yerakot-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body row row-cols-sm-3">
+                                        <div class="accordion-body row row-cols-auto">
                                             <div class="card food_type_recommend col">
                                                 <div class="card-body">
                                                     <img src="images/tomato.png" /> עגבניה
@@ -925,10 +991,26 @@
                             </p>
                             <div class="row gap-3">
                                 <h4 class="benefits">יתרונות בריאותיים</h4>
-                                <div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
+                                <div class="row advantages">
+                                    <div class="foodtype_icon col-sm-3 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב">
+                                        <img src="images/dganim-benefit-1.png" />
+                                        <p class="col-9">הורדת רמות הכולסטרול ושמירה על תפקוד הלב</p>
+                                    </div>
+                                    <div class="foodtype_icon col-sm-3 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין">
+                                        <img src="images/yerakot-benefits-2.png" />
+                                        <p class="col-9">שמירה על משקל תקין</p>
+                                    </div>
+                                    <div class="foodtype_icon col-sm-3 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן">
+                                        <img src="images/yerakot-benefits-3.png" />
+                                        <p class="col-9">הפחתת הסיכון לסרטן</p>
+                                    </div>
+
+                                </div>
+                                <!--<div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
                                 <div class="foodtype_icon col-1 yerakot-benefits-2" data-bs-toggle="tooltip" data-bs-placement="top" title="שמירה על משקל תקין"></div>
-                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>-->
                             </div>
+
                         </div>
                         <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
                         <div class="form col-sm-8 foodtype_content">
@@ -939,7 +1021,7 @@
                     </div>-->
 
                             <div class="row foodtype_check">
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-home-list a1" data-bs-toggle="list" href="#peirot-1" role="tab" aria-controls="home">
                                             <input class="form-check-input" type="checkbox" id="p1">
@@ -967,7 +1049,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="peirot-1" role="tabpanel" aria-labelledby="list-home-list">
                                             מומלץ לאכול 2-3 פירות ליום.
@@ -997,7 +1079,7 @@
                                         </button>
                                     </h4>
                                     <div id="fruits-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body row row-cols-sm-3">
+                                        <div class="accordion-body row row-cols-auto">
                                             <div class="card food_type_recommend col">
                                                 <div class="card-body">
                                                     <img src="images/apples.png" /> תפוח
@@ -1093,9 +1175,24 @@
                             </p>
                             <div class="row gap-3">
                                 <h4 class="benefits">יתרונות בריאותיים</h4>
-                                <div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
+                                <div class="row advantages">
+                                    <div class="foodtype_icon col-sm-3 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב">
+                                        <img src="images/dganim-benefit-1.png" />
+                                        <p class="col-9">הורדת רמות הכולסטרול ושמירה על תפקוד הלב</p>
+                                    </div>
+                                    <div class="foodtype_icon col-sm-3 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי">
+                                        <img src="images/kitniot-benefits-1.png" />
+                                        <p class="col-9">מסייעות בתהליך העיכול ולתפקוד המעי</p>
+                                    </div>
+                                    <div class="foodtype_icon col-sm-3 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן">
+                                        <img src="images/yerakot-benefits-3.png" />
+                                        <p class="col-9">הפחתת הסיכון לסרטן</p>
+                                    </div>
+                                </div>
+
+                                <!--<div class="foodtype_icon col-1 dganim-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="הורדת רמות הכולסטרול ושמירה על תפקוד הלב"></div>
                                 <div class="foodtype_icon col-1 kitniot-benefits-1" data-bs-toggle="tooltip" data-bs-placement="top" title="מסייעות בתהליך העיכול ולתפקוד המעי"></div>
-                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>
+                                <div class="foodtype_icon col-1 yerakot-benefits-3" data-bs-toggle="tooltip" data-bs-placement="top" title="הפחתת הסיכון לסרטן"></div>-->
                             </div>
                         </div>
                         <!-- חלק שמאל הכולל המלצות לשילוב סוג האוכל, מאכלים מוכרים והמלצות למתכונים -->
@@ -1107,7 +1204,7 @@
                     </div>-->
 
                             <div class="row foodtype_check">
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-home-list k1" data-bs-toggle="list" href="#kitnot-1" role="tab" aria-controls="home">
                                             <input class="form-check-input" type="checkbox" id="k1">
@@ -1141,7 +1238,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="kitnot-1" role="tabpanel" aria-labelledby="list-home-list">
                                             מומלץ לשלב קטניות בארוחה עיקרית אחת ביום לפחות.
@@ -1175,7 +1272,7 @@
                                         </button>
                                     </h4>
                                     <div id="kitniot-type-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body row row-cols-sm-3">
+                                        <div class="accordion-body row row-cols-auto">
                                             <div class="card food_type_recommend col">
                                                 <div class="card-body">
                                                     <img src="images/humus.png" /> חומוס
@@ -1266,7 +1363,7 @@
                         <div class="col-sm-8">
                             <div class="main-tab-content">
                                 <!--מידע כללי בנוגע למאכלים שרצוי להימנע מהם-->
-                                <h1>מאכלים שרצוי להימנע</h1>
+                                <h1 id="avoidTitle">מאכלים שרצוי להימנע</h1>
                                 <p class="support_header_text">
                                     אמנם מדובר במזון המציע טעם משופר, הכנה מהירה ופשוטה וחיי מדף ארוכים יותר, אבל זה מגיע עם תג מחיר גבוה במיוחד: <b>רמות תחלואה גבוהות ואינספור בעיות בריאותיות חמורות ומסכנות חיים</b>.
                                     מדובר במאכלים מלאים בתוספים מלאכותיים כמו חומרי טעם, צבעי מאכל, חומרים משמרים, מייצבים, מתחלבים, מעכבי חמצון ועוד.
@@ -1385,7 +1482,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <!--סטריפ הודעה בדבר מקרים חריגים-->
                             <div class="alert alert-light align-items-center" role="alert">
                                 <div class="d-flex">

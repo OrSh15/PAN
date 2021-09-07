@@ -1,12 +1,15 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title></title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
 
     <!-- CSS -->
     <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
@@ -16,12 +19,18 @@
     <link href="styles/myStyle.css" rel="stylesheet" />
 
     <!--Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Scripts -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--<script src="jScripts/jquery.js"></script>-->
@@ -30,453 +39,564 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</head>
-<body dir="rtl">
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body dir="rtl">
     <!-- תפריט ראשי באתר-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo">Nutri Aid</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-sm-end" id="navbarSupportedContent">
-            <ul class="navbar-nav main-nav">
-                <li class="nav-item">
-                    <a class="active nav-link" id="learnNutrition" href="QuizForPatient.html">שאלון</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="infoPatient" href="pagientNutriAdvice.html">מידע על תזונה</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand logo">Nutri Aid</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-sm-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav main-nav">
+          <li class="nav-item">
+            <a
+              class="active nav-link"
+              id="learnNutrition"
+              href="QuizForPatient.html"
+              >שאלון</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="infoPatient" href="pagientNutriAdvice.html"
+              >מידע על תזונה</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Main -->
     <div class="mx-auto">
-
-
-                <!-- שלב 1 - שאילת שאלות -->
-                <div class="tab-pane fade show active" id="v-pills-question" role="tabpanel" aria-labelledby="v-pills-question-tab">
-                    <div class="main-tab-content">
-                        <div class="mx-auto container">
-                            <h1>שאלון אבחון הרגלי תזונה</h1>
-                            <h4>בואו גלו מה הרגלי התזונה שלכם בעזרת שאלון זריז ! שתפו את התוצאות עם הרופא כדי לקבל הצעות והמלצות בנושא</h4>
-                            <form name="questions" id="questions">
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            כמה את/ה משלב/ת קטניות בארוחות? (עדשים, גרגרי
-                                            חומוס,אפונה,טופו,שעועית לבנה)
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="f"
-                                                       id="f1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="f1"> כל ארוחה </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="f"
-                                                       id="f2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="f2">
-                                                    פעם - פעמיים ביום
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="f"
-                                                       id="f3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="f3">
-                                                    כמה פעמים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="f"
-                                                       id="f4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="f4">לעתים רחוקות </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="f"
-                                                       id="f5"
-                                                       value="e" />
-                                                <label class="form-check-label" for="f5">כלל לא </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            כמה פעמים יוצא לך לאכול ארוחה עיקרית ללא בשר ?
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="s"
-                                                       id="s1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="s1"> כל יום </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="s"
-                                                       id="s2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="s2">
-                                                    כמה פעמים בשבוע
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="s"
-                                                       id="s3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="s3">
-                                                    פעם - פעמיים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="s"
-                                                       id="s4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="s4">כלל לא </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            באיזה תדירות את/ה משלב ירקות בארוחה ?
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="t"
-                                                       id="t1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="t1"> בכל ארוחה </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="t"
-                                                       id="t2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="t2">
-                                                    ארוחה אחת / שתיים ביום
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="t"
-                                                       id="t3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="t3">
-                                                    כמה פעמים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="t"
-                                                       id="t4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="t4">
-                                                    פעם - פעמיים בשבוע
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="t"
-                                                       id="t5"
-                                                       value="e" />
-                                                <label class="form-check-label" for="t5">כלל לא </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            איזה כמות של פירות את/ה אוכל ביום ?
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fo"
-                                                       id="fo1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="fo1">
-                                                    אוכל/ת 2-4 פירות ביום
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fo"
-                                                       id="fo2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="fo2">
-                                                    אוכל/ת 1-2 פירות ביום
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fo"
-                                                       id="fo3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="fo3">
-                                                    פחות מפרי ביום במהלך השבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fo"
-                                                       id="fo4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="fo4">כלל לא </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            באיזה תדירות את/ה צורך/ת דגנים מלאים במקום לבנים ? (לחם מלא, פסטה
-                                            מלאה, אורז מלא)
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fi"
-                                                       id="fi1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="fi1"> בכל ארוחה </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fi"
-                                                       id="fi2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="fi2"> פעם ביום </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fi"
-                                                       id="fi3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="fi3">
-                                                    פחות מפעם ביום
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fi"
-                                                       id="fi4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="fi4">
-                                                    פעם - פעמיים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="fi"
-                                                       id="fi5"
-                                                       value="e" />
-                                                <label class="form-check-label" for="fi5">כלל לא </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            באיזה תדירות את/ה צורך/ת בשר אדום ובשר מעובד ? (נקניק,פסטרמה,שניצל
-                                            קנוי,נקניקיות)
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="si"
-                                                       id="si1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="si1"> כלל לא </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="si"
-                                                       id="si2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="si2">
-                                                    לעיתים רחוקות
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="si"
-                                                       id="si3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="si3">
-                                                    פעם - פעמיים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="si"
-                                                       id="si4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="si4">
-                                                    כמה פעמים במהלך השבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="si"
-                                                       id="si5"
-                                                       value="e" />
-                                                <label class="form-check-label" for="si5">כל יום </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="form-group quiston">
-                                    <div class="row">
-                                        <legend class="col-form-label">
-                                            באיזה תדירות את/ה צורך/ת מזון מעובד (ממתקים,מזון מטוגן,משקאות
-                                            מתוקים) ?
-                                        </legend>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="se"
-                                                       id="se1"
-                                                       value="a" />
-                                                <label class="form-check-label" for="se1"> כלל לא </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="se"
-                                                       id="se2"
-                                                       value="b" />
-                                                <label class="form-check-label" for="se2">
-                                                    לעיתים רחוקות
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="se"
-                                                       id="se3"
-                                                       value="c" />
-                                                <label class="form-check-label" for="se3">
-                                                    פעם - פעמיים בשבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="se"
-                                                       id="se4"
-                                                       value="d" />
-                                                <label class="form-check-label" for="se4">
-                                                    כמה פעמים במהלך השבוע
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input"
-                                                       type="radio"
-                                                       name="se"
-                                                       id="se5"
-                                                       value="e" />
-                                                <label class="form-check-label" for="se5">כל יום </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <input type="submit" value="קבלת תוצאות" class="check_btn" />
-                            </form>
-
-                            <div class="modal fade"
-                                 id="resultsModal"
-                                 role="dialog"
-                                 >
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">תוצאות</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body"></div>
-                                        <!--<div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary end-questions" data-bs-dismiss="modal">עבור לשלב הבא</button>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <!-- שלב 1 - שאילת שאלות -->
+      <div
+        class="tab-pane fade show active"
+        id="v-pills-question"
+        role="tabpanel"
+        aria-labelledby="v-pills-question-tab"
+      >
+        <div class="main-tab-content">
+          <div class="mx-auto container">
+            <h1>שאלון אבחון הרגלי תזונה</h1>
+            <h4>
+              בואו גלו מה הרגלי התזונה שלכם בעזרת שאלון זריז ! שתפו את התוצאות
+              עם הרופא כדי לקבל הצעות והמלצות בנושא
+            </h4>
+            <form name="questions" id="questions">
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    כמה את/ה משלב/ת קטניות בארוחות? (עדשים, גרגרי
+                    חומוס,אפונה,טופו,שעועית לבנה)
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="f"
+                        id="f1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="f1">
+                        כל ארוחה
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="f"
+                        id="f2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="f2">
+                        פעם - פעמיים ביום
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="f"
+                        id="f3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="f3">
+                        כמה פעמים בשבוע
+                      </label>
                     </div>
 
-                </div>
-        </div>
- 
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="f"
+                        id="f4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="f4"
+                        >לעתים רחוקות
+                      </label>
+                    </div>
 
-</body>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="f"
+                        id="f5"
+                        value="e"
+                      />
+                      <label class="form-check-label" for="f5">כלל לא </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    כמה פעמים יוצא לך לאכול ארוחה עיקרית ללא בשר ?
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="s"
+                        id="s1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="s1"> כל יום </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="s"
+                        id="s2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="s2">
+                        כמה פעמים בשבוע
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="s"
+                        id="s3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="s3">
+                        פעם - פעמיים בשבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="s"
+                        id="s4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="s4">כלל לא </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label">
+                    באיזה תדירות את/ה משלב ירקות בארוחה ?
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="t"
+                        id="t1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="t1">
+                        בכל ארוחה
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="t"
+                        id="t2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="t2">
+                        ארוחה אחת / שתיים ביום
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="t"
+                        id="t3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="t3">
+                        כמה פעמים בשבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="t"
+                        id="t4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="t4">
+                        פעם - פעמיים בשבוע
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="t"
+                        id="t5"
+                        value="e"
+                      />
+                      <label class="form-check-label" for="t5">כלל לא </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    איזה כמות של פירות את/ה אוכל ביום ?
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fo"
+                        id="fo1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="fo1">
+                        אוכל/ת 2-4 פירות ביום
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fo"
+                        id="fo2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="fo2">
+                        אוכל/ת 1-2 פירות ביום
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fo"
+                        id="fo3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="fo3">
+                        פחות מפרי ביום במהלך השבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fo"
+                        id="fo4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="fo4">כלל לא </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    באיזה תדירות את/ה צורך/ת דגנים מלאים במקום לבנים ? (לחם מלא,
+                    פסטה מלאה, אורז מלא)
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fi"
+                        id="fi1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="fi1">
+                        בכל ארוחה
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fi"
+                        id="fi2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="fi2">
+                        פעם ביום
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fi"
+                        id="fi3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="fi3">
+                        פחות מפעם ביום
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fi"
+                        id="fi4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="fi4">
+                        פעם - פעמיים בשבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fi"
+                        id="fi5"
+                        value="e"
+                      />
+                      <label class="form-check-label" for="fi5">כלל לא </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    באיזה תדירות את/ה צורך/ת בשר אדום ובשר מעובד ?
+                    (נקניק,פסטרמה,שניצל קנוי,נקניקיות)
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="si"
+                        id="si1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="si1"> כלל לא </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="si"
+                        id="si2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="si2">
+                        לעיתים רחוקות
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="si"
+                        id="si3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="si3">
+                        פעם - פעמיים בשבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="si"
+                        id="si4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="si4">
+                        כמה פעמים במהלך השבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="si"
+                        id="si5"
+                        value="e"
+                      />
+                      <label class="form-check-label" for="si5">כל יום </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group quiston">
+                <div class="row">
+                  <legend class="col-form-label">
+                    באיזה תדירות את/ה צורך/ת מזון מעובד (ממתקים,מזון
+                    מטוגן,משקאות מתוקים) ?
+                  </legend>
+                  <div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="se"
+                        id="se1"
+                        value="a"
+                      />
+                      <label class="form-check-label" for="se1"> כלל לא </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="se"
+                        id="se2"
+                        value="b"
+                      />
+                      <label class="form-check-label" for="se2">
+                        לעיתים רחוקות
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="se"
+                        id="se3"
+                        value="c"
+                      />
+                      <label class="form-check-label" for="se3">
+                        פעם - פעמיים בשבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="se"
+                        id="se4"
+                        value="d"
+                      />
+                      <label class="form-check-label" for="se4">
+                        כמה פעמים במהלך השבוע
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="se"
+                        id="se5"
+                        value="e"
+                      />
+                      <label class="form-check-label" for="se5">כל יום </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <input type="submit" value="קבלת תוצאות" class="check_btn" />
+            </form>
+
+            <div class="modal fade" id="resultsModal" role="dialog">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      תוצאות
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <!--<div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary end-questions" data-bs-dismiss="modal">עבור לשלב הבא</button>
+                                        </div>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

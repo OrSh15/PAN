@@ -244,8 +244,8 @@ nav {
 }
 
 .backtotop:hover {
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid white;
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
 }
 
 .benfits-item{
@@ -253,28 +253,28 @@ nav {
 }
 
 #vegsSection {
-    background-color: forestgreen;
-    color: white;
+    background-color: #d9f8da;
+    color: #212529;
 }
 #fruitsSection {
-    background-color: orangered;
-    color: white;
+    background-color: #f8d9db;
+    color: #212529;
 }
 #legumesSection {
-    background-color: saddlebrown;
-    color: white;
+    background-color: #f9e4ad;
+    color: #212529;
 }
 #seedsSection {
-    background-color: darkgoldenrod;
-    color: white;
+    background-color: #f8f7d9;
+    color: #212529;
 }
 #nutsSection {
-    background-color: darkred;
-    color: white;
+    background-color: #f8eed9;
+    color: #212529;
 }
 #grainsSection {
-    background-color: olive;
-    color: white;
+    background-color: #f8e8d9;
+    color: #212529;
 }
 
 .sectiontext{
@@ -287,6 +287,7 @@ nav {
 
 .freqp{
     margin-right: 20px;
+    color:black
 }
 
 .recipe {
@@ -310,8 +311,9 @@ nav {
     left: 50px;
     width: 40px;
     border-radius: 100px;
-    border: 1px solid white;
-    color: white;
+    background: #0d6efdad;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
 }
 
 .about {
@@ -403,4 +405,9 @@ nav {
 
 .btn-floating img{
     padding-left: 6px;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    background: #20bf94a1;
 }
